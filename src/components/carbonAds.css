@@ -1,0 +1,72 @@
+#carbonads,
+.carbonplaceholder {
+  background-color: #281e36;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 290px;
+  height: 170px;
+  margin: 15px auto;
+}
+
+@media (min-width: 360px) {
+  #carbonads,
+  .carbonplaceholder {
+    width: 350px;
+  }
+}
+
+.carbonplaceholder * {
+  opacity: 0;
+  animation: fade-in 0.2s forwards 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#carbonads + .carbonplaceholder {
+  display: none;
+}
+
+#carbonads a {
+  border: none;
+  margin-top: 10px;
+}
+
+.carbon-wrap {
+  display: flex;
+}
+
+.carbon-img {
+  padding-right: 10px;
+}
+.carbon-img img {
+  border-radius: 3px;
+}
+
+.carbon-poweredby {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+}
+
+.carbon-text {
+  font-size: 14px;
+}
+
+.carbon-text a {
+  color: #c83b50;
+  border-bottom: 2px solid rgba(200, 59, 80, 0.25);
+}
+
+.carbon-text,
+.carbon-poweredby {
+  text-decoration: none;
+  color: inherit;
+}
